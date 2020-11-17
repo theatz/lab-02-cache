@@ -131,28 +131,177 @@ cache_size['3'] = 8 mb;
 Для получения времени обхода от размера массива процедуру прохода необходимо многократно повторить (порядка 1000 раз).
 
 ### Результаты
-
-Ниже представлен формат и пример отчета:
-
-```yaml
-investigation:                                       |  investigaion:
-  travel_variant: <вариант_прохода>                  |    travel_order: "direction"
-  experiments:                                       |    experiments:
-  - experiment:                                      |    - experiment:
-      number:                                        |        number: 1
-      input_data:                                    |        input_data:
-        buffer_size: <размер_буфера>                 |          buffer_size: "1mb"
-      results:                                       |        results:
-        duration: <продолжительность>                |          duration: "1ns"
-  - experiment:                                      |    - experiment:
-      number: <номер_эксперимента>                   |        number: 2
-      input_data:                                    |        input_data:
-        buffer_size: <размер_буфера>                 |          buffer_size: "2mb"
-      results:                                       |        results:
-        duration: <продолжительность>                |          duration: "2ns"
-                                                     |
-investigation:                                       |  investigation:
-...                                                  |  ...
+```yml
+investigation:
+ travel_variant: Direct
+ experiments
+- experiment:
+  number: 1
+  input_data:
+   buffer_size: 32 Kib
+  results:
+   duration: 1.127000 mcs
+- experiment:
+  number: 2
+  input_data:
+   buffer_size: 64 Kib
+  results:
+   duration: 2.448000 mcs
+- experiment:
+  number: 3
+  input_data:
+   buffer_size: 128 Kib
+  results:
+   duration: 5.588000 mcs
+- experiment:
+  number: 4
+  input_data:
+   buffer_size: 256 Kib
+  results:
+   duration: 10.680000 mcs
+- experiment:
+  number: 5
+  input_data:
+   buffer_size: 512 Kib
+  results:
+   duration: 17.577000 mcs
+- experiment:
+  number: 6
+  input_data:
+   buffer_size: 1024 Kib
+  results:
+   duration: 35.948000 mcs
+- experiment:
+  number: 7
+  input_data:
+   buffer_size: 2048 Kib
+  results:
+   duration: 82.982000 mcs
+- experiment:
+  number: 8
+  input_data:
+   buffer_size: 4096 Kib
+  results:
+   duration: 136.413000 mcs
+- experiment:
+  number: 9
+  input_data:
+   buffer_size: 4608 Kib
+  results:
+   duration: 151.291000 mcs
+investigation:
+ travel_variant: Reverse
+ experiments
+- experiment:
+  number: 1
+  input_data:
+   buffer_size: 32 Kib
+  results:
+   duration: 1.296000 mcs
+- experiment:
+  number: 2
+  input_data:
+   buffer_size: 64 Kib
+  results:
+   duration: 2.835000 mcs
+- experiment:
+  number: 3
+  input_data:
+   buffer_size: 128 Kib
+  results:
+   duration: 5.670000 mcs
+- experiment:
+  number: 4
+  input_data:
+   buffer_size: 256 Kib
+  results:
+   duration: 11.833000 mcs
+- experiment:
+  number: 5
+  input_data:
+   buffer_size: 512 Kib
+  results:
+   duration: 22.900000 mcs
+- experiment:
+  number: 6
+  input_data:
+   buffer_size: 1024 Kib
+  results:
+   duration: 45.533000 mcs
+- experiment:
+  number: 7
+  input_data:
+   buffer_size: 2048 Kib
+  results:
+   duration: 98.762000 mcs
+- experiment:
+  number: 8
+  input_data:
+   buffer_size: 4096 Kib
+  results:
+   duration: 273.762000 mcs
+- experiment:
+  number: 9
+  input_data:
+   buffer_size: 4608 Kib
+  results:
+   duration: 326.171000 mcs
+investigation:
+ travel_variant: Random
+ experiments
+- experiment:
+  number: 1
+  input_data:
+   buffer_size: 32 Kib
+  results:
+   duration: 12.310000 mcs
+- experiment:
+  number: 2
+  input_data:
+   buffer_size: 64 Kib
+  results:
+   duration: 23.300000 mcs
+- experiment:
+  number: 3
+  input_data:
+   buffer_size: 128 Kib
+  results:
+   duration: 45.968000 mcs
+- experiment:
+  number: 4
+  input_data:
+   buffer_size: 256 Kib
+  results:
+   duration: 91.913000 mcs
+- experiment:
+  number: 5
+  input_data:
+   buffer_size: 512 Kib
+  results:
+   duration: 196.495000 mcs
+- experiment:
+  number: 6
+  input_data:
+   buffer_size: 1024 Kib
+  results:
+   duration: 393.855000 mcs
+- experiment:
+  number: 7
+  input_data:
+   buffer_size: 2048 Kib
+  results:
+   duration: 1013.852000 mcs
+- experiment:
+  number: 8
+  input_data:
+   buffer_size: 4096 Kib
+  results:
+   duration: 3233.411000 mcs
+- experiment:
+  number: 9
+  input_data:
+   buffer_size: 4608 Kib
+  results:
+   duration: 3711.729000 mcs
 ```
-
-⚠️ В отчет также необходимо добавить общий график с результатами всех исследований. ⚠️
+![Cache](./images/yotx.ru.png)
