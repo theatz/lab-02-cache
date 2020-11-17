@@ -131,7 +131,7 @@ cache_size['3'] = 8 mb;
 Для получения времени обхода от размера массива процедуру прохода необходимо многократно повторить (порядка 1000 раз).
 
 ### Результаты
-
+```yml
 investigation:
  travel_variant: Direct
  experiments
@@ -303,3 +303,4 @@ investigation:
    buffer_size: 4608 Kib
   results:
    duration: 3711.729000 mcs
+```
