@@ -304,3 +304,4 @@ investigation:
   results:
    duration: 3711.729000 mcs
 ```
+![Cache](./images/yotx.ru.png)
