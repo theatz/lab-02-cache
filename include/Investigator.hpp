@@ -1,9 +1,10 @@
+//Copyright 2020 theatz
 //
 // Created by theatz on 16.11.2020.
 //
 
-#ifndef LAB_02_CACHE_INVESTIGATOR_HPP
-#define LAB_02_CACHE_INVESTIGATOR_HPP
+#ifndef INCLUDE_INVESTIGATOR_HPP_
+#define INCLUDE_INVESTIGATOR_HPP_
 #include <iostream>
 #include <vector>
 #include <chrono>
@@ -32,4 +33,4 @@ private:
   std::vector<uint32_t> _mas;
 };
 
-#endif  // LAB_02_CACHE_INVESTIGATOR_HPP
+#endif  // INCLUDE_INVESTIGATOR_HPP_

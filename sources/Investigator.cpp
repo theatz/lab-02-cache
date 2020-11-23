@@ -1,3 +1,4 @@
+//Copyright 2020 theatz
 //
 // Created by theatz on 16.11.2020.
 //
@@ -13,12 +14,11 @@ Investigator::Investigator(uint32_t L1, uint32_t L3){
   DirectTest();
   ReverseTest();
   RandomTest();
-  ClearOutput();
+  //ClearOutput();
   //Graf();
 }
 
 Investigator::~Investigator() {
-
 }
 
 void Investigator::DirectTest() {
