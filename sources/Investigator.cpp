@@ -14,7 +14,7 @@ Investigator::Investigator(uint32_t L1, uint32_t L3){
   DirectTest();
   ReverseTest();
   RandomTest();
-  //ClearOutput();
+  ClearOutput();
   //Graf();
 }
 
