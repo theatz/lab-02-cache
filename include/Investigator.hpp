@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <chrono>
+#include <string>
 
 struct Investigation{
   std::string type;
