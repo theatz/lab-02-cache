@@ -49,7 +49,7 @@ void Investigator::DirectTest() {
     NewInvestigation.time = static_cast<double>(EntireTime) / 1000.0;
     NewInvestigation.type = "Direct";
     _result.push_back(NewInvestigation);
-    delete array;
+    delete[] array;
   }
 }
 
