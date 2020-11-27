@@ -138,7 +138,7 @@ void Investigator::WarmupReverse(uint32_t* array, uint32_t size) {
   uint32_t current = 0;
   current += current;
   int size_int = static_cast<int>(size);
-  for (uint32_t i = size_int; i > 0 ; i -= 16)
+  for (int i = size_int; i > 0 ; i -= 16)
     current = array[i];
 }
 
