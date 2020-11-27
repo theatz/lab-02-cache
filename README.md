@@ -140,55 +140,55 @@ investigation:
   input_data:
    buffer_size: 32 Kib
   results:
-   duration: 1.127000 mcs
+   duration: 1.127000 ms
 - experiment:
   number: 2
   input_data:
    buffer_size: 64 Kib
   results:
-   duration: 2.448000 mcs
+   duration: 2.448000 ms
 - experiment:
   number: 3
   input_data:
    buffer_size: 128 Kib
   results:
-   duration: 5.588000 mcs
+   duration: 5.588000 ms
 - experiment:
   number: 4
   input_data:
    buffer_size: 256 Kib
   results:
-   duration: 10.680000 mcs
+   duration: 10.680000 ms
 - experiment:
   number: 5
   input_data:
    buffer_size: 512 Kib
   results:
-   duration: 17.577000 mcs
+   duration: 17.577000 ms
 - experiment:
   number: 6
   input_data:
    buffer_size: 1024 Kib
   results:
-   duration: 35.948000 mcs
+   duration: 35.948000 ms
 - experiment:
   number: 7
   input_data:
    buffer_size: 2048 Kib
   results:
-   duration: 82.982000 mcs
+   duration: 82.982000 ms
 - experiment:
   number: 8
   input_data:
    buffer_size: 4096 Kib
   results:
-   duration: 136.413000 mcs
+   duration: 136.413000 ms
 - experiment:
   number: 9
   input_data:
    buffer_size: 4608 Kib
   results:
-   duration: 151.291000 mcs
+   duration: 151.291000 ms
 investigation:
  travel_variant: Reverse
  experiments
@@ -197,55 +197,55 @@ investigation:
   input_data:
    buffer_size: 32 Kib
   results:
-   duration: 1.296000 mcs
+   duration: 1.296000 ms
 - experiment:
   number: 2
   input_data:
    buffer_size: 64 Kib
   results:
-   duration: 2.835000 mcs
+   duration: 2.835000 ms
 - experiment:
   number: 3
   input_data:
    buffer_size: 128 Kib
   results:
-   duration: 5.670000 mcs
+   duration: 5.670000 ms
 - experiment:
   number: 4
   input_data:
    buffer_size: 256 Kib
   results:
-   duration: 11.833000 mcs
+   duration: 11.833000 ms
 - experiment:
   number: 5
   input_data:
    buffer_size: 512 Kib
   results:
-   duration: 22.900000 mcs
+   duration: 22.900000 ms
 - experiment:
   number: 6
   input_data:
    buffer_size: 1024 Kib
   results:
-   duration: 45.533000 mcs
+   duration: 45.533000 ms
 - experiment:
   number: 7
   input_data:
    buffer_size: 2048 Kib
   results:
-   duration: 98.762000 mcs
+   duration: 98.762000 ms
 - experiment:
   number: 8
   input_data:
    buffer_size: 4096 Kib
   results:
-   duration: 273.762000 mcs
+   duration: 273.762000 ms
 - experiment:
   number: 9
   input_data:
    buffer_size: 4608 Kib
   results:
-   duration: 326.171000 mcs
+   duration: 326.171000 ms
 investigation:
  travel_variant: Random
  experiments
@@ -254,54 +254,54 @@ investigation:
   input_data:
    buffer_size: 32 Kib
   results:
-   duration: 12.310000 mcs
+   duration: 12.310000 ms
 - experiment:
   number: 2
   input_data:
    buffer_size: 64 Kib
   results:
-   duration: 23.300000 mcs
+   duration: 23.300000 ms
 - experiment:
   number: 3
   input_data:
    buffer_size: 128 Kib
   results:
-   duration: 45.968000 mcs
+   duration: 45.968000 ms
 - experiment:
   number: 4
   input_data:
    buffer_size: 256 Kib
   results:
-   duration: 91.913000 mcs
+   duration: 91.913000 ms
 - experiment:
   number: 5
   input_data:
    buffer_size: 512 Kib
   results:
-   duration: 196.495000 mcs
+   duration: 196.495000 ms
 - experiment:
   number: 6
   input_data:
    buffer_size: 1024 Kib
   results:
-   duration: 393.855000 mcs
+   duration: 393.855000 ms
 - experiment:
   number: 7
   input_data:
    buffer_size: 2048 Kib
   results:
-   duration: 1013.852000 mcs
+   duration: 1013.852000 ms
 - experiment:
   number: 8
   input_data:
    buffer_size: 4096 Kib
   results:
-   duration: 3233.411000 mcs
+   duration: 3233.411000 ms
 - experiment:
   number: 9
   input_data:
    buffer_size: 4608 Kib
   results:
-   duration: 3711.729000 mcs
+   duration: 3711.729000 ms
 ```
 ![Cache](./images/yotx.ru.png)
