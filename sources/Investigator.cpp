@@ -81,7 +81,7 @@ void Investigator::ReverseTest() {
     NewInvestigation.time = static_cast<double>(EntireTime) / 1000.0;
     NewInvestigation.type = "Reverse";
     _result.push_back(NewInvestigation);
-    delete array;
+    delete[] array;
   }
 }
 
@@ -118,7 +118,7 @@ void Investigator::RandomTest() {
     NewInvestigation.time = static_cast<double>(EntireTime) / 1000.0;
     NewInvestigation.type = "Random";
     _result.push_back(NewInvestigation);
-    delete array;
+    delete[] array;
   }
 }
 
@@ -135,8 +135,10 @@ void Investigator::WarmupDirect(uint32_t* array, uint32_t size) {
 }
 
 void Investigator::WarmupReverse(uint32_t* array, uint32_t size) {
-  for (uint32_t i = size; i > 0 ; i -= 16)
-    array[i] = 0;
+  uint32_t current = 0;
+  current += current;
+  for (uint32_t i = size; i == 0 ; i -= 16)
+    current = array[i];
 }
 
 void Investigator::WarmupRandom(uint32_t* array, uint32_t size) {
