@@ -70,7 +70,7 @@ void Investigator::ReverseTest() {
     WarmupReverse(array, ArrayLength);
     auto start = std::chrono::high_resolution_clock::now();
     for (uint32_t j = 0; j < TestCount; ++j) {
-      for (uint32_t k = 0; k < ArrayLength; k += 16) 
+      for (uint32_t k = 0; k < ArrayLength; k += 16)
         current = array[ArrayLength - k - 1];
     }
 
