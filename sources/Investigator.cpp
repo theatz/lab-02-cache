@@ -162,7 +162,7 @@ void Investigator::ClearOutput() {
       Out += " Kib\n";
       Out += "  results:\n   duration: ";
       Out += std::to_string(_result[i].time);
-      Out += " mcs\n";
+      Out += " ms\n";
     }
   }
   std::cout << Out;
