@@ -137,9 +137,9 @@ void Investigator::WarmupDirect(uint32_t* array, uint32_t size) {
 void Investigator::WarmupReverse(uint32_t* array, uint32_t size) {
   uint32_t current = 0;
   current += current;
-  int size_int = static_cast<int>(size);
-  for (int i = size_int; i >= 0 ; i -= 16)
-    current = array[i];
+  //int size_int = static_cast<int>(size);
+  for (uint32_t i = 0; i < size ; i += 16)
+    current = array[size - i];
 }
 
 void Investigator::WarmupRandom(uint32_t* array, uint32_t size) {
