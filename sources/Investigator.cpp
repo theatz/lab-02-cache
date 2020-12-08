@@ -66,7 +66,7 @@ void Investigator::ReverseTest() {
   current += current;
   int64_t EntireTime = 0;
   uint32_t ArrInc = 16;
-  double TimeSUb = 1000.0;
+  double TimeSub = 1000.0;
   struct Investigation NewInvestigation;
 
   for (uint32_t i = 0; i < ArraySize; ++i) {
@@ -105,7 +105,7 @@ void Investigator::RandomTest() {
   current += current;
   int64_t EntireTime = 0;
   uint32_t ArrInc = 16;
-  double TimeSUb = 1000.0;
+  double TimeSub = 1000.0;
   struct Investigation NewInvestigation;
 
   for (uint32_t i = 0; i < ArraySize; ++i) {
