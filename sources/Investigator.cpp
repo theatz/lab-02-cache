@@ -30,6 +30,9 @@ void Investigator::DirectTest() {
   ArraySize += ArrayLength;
   current += current;
   int64_t EntireTime = 0;
+  uint32_t ArrInc = 16;
+  double TimeSub = 1000.0;
+
   struct Investigation NewInvestigation;
 
   for (uint32_t i = 0; i < ArraySize; ++i) {
@@ -38,7 +41,7 @@ void Investigator::DirectTest() {
     WarmupDirect(array, ArrayLength);
     auto start = std::chrono::high_resolution_clock::now();
     for (uint32_t j = 0; j < TestCount; ++j) {
-      for (uint32_t k = 0; k < ArrayLength; k += 16) current = array[k];
+      for (uint32_t k = 0; k < ArrayLength; k += ArrInc) current = array[k];
       }
 
     auto finish = std::chrono::high_resolution_clock::now();
@@ -46,7 +49,7 @@ void Investigator::DirectTest() {
         std::chrono::duration_cast<std::chrono::microseconds>(finish - start)
             .count();
     NewInvestigation.number = i;
-    NewInvestigation.time = static_cast<double>(EntireTime) / 1000.0;
+    NewInvestigation.time = static_cast<double>(EntireTime) / TimeSub;
     NewInvestigation.type = "Direct";
     _result.push_back(NewInvestigation);
     delete[] array;
@@ -62,6 +65,8 @@ void Investigator::ReverseTest() {
   ArraySize += ArrayLength;
   current += current;
   int64_t EntireTime = 0;
+  uint32_t ArrInc = 16;
+  double TimeSUb = 1000.0;
   struct Investigation NewInvestigation;
 
   for (uint32_t i = 0; i < ArraySize; ++i) {
@@ -70,7 +75,7 @@ void Investigator::ReverseTest() {
     WarmupReverse(array, ArrayLength);
     auto start = std::chrono::high_resolution_clock::now();
     for (uint32_t j = 0; j < TestCount; ++j) {
-      for (uint32_t k = 0; k < ArrayLength; k += 16)
+      for (uint32_t k = 0; k < ArrayLength; k += ArrInc)
         current = array[ArrayLength - k - 1];
     }
 
@@ -79,7 +84,7 @@ void Investigator::ReverseTest() {
         std::chrono::duration_cast<std::chrono::microseconds>(finish - start)
             .count();
     NewInvestigation.number = i;
-    NewInvestigation.time = static_cast<double>(EntireTime) / 1000.0;
+    NewInvestigation.time = static_cast<double>(EntireTime) / TimeSub;
     NewInvestigation.type = "Reverse";
     _result.push_back(NewInvestigation);
     delete[] array;
@@ -99,6 +104,8 @@ void Investigator::RandomTest() {
   ArraySize += ArrayLength;
   current += current;
   int64_t EntireTime = 0;
+  uint32_t ArrInc = 16;
+  double TimeSUb = 1000.0;
   struct Investigation NewInvestigation;
 
   for (uint32_t i = 0; i < ArraySize; ++i) {
@@ -107,7 +114,7 @@ void Investigator::RandomTest() {
     WarmupRandom(array, ArrayLength);
     auto start = std::chrono::high_resolution_clock::now();
     for (uint32_t j = 0; j < TestCount; ++j) {
-      for (uint32_t k = 0; k < ArrayLength / 16; ++k)
+      for (uint32_t k = 0; k < ArrayLength / ArrInc; ++k)
         current = array[RandomNumber(0, ArrayLength - 1)];
     }
 
@@ -116,7 +123,7 @@ void Investigator::RandomTest() {
         std::chrono::duration_cast<std::chrono::microseconds>(finish - start)
             .count();
     NewInvestigation.number = i;
-    NewInvestigation.time = static_cast<double>(EntireTime) / 1000.0;
+    NewInvestigation.time = static_cast<double>(EntireTime) / TimeSub;
     NewInvestigation.type = "Random";
     _result.push_back(NewInvestigation);
     delete[] array;
